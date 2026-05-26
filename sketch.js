@@ -191,265 +191,265 @@ civilFailAqPenalty: 0.2,  // 文明劝阻失败：AQ -0.2
 };
 
 function preload() {
-  bgMusic = loadSound("background.mp3");
-fightSound = loadSound("fight.mp3");
+  bgMusic = loadSound("sounds/background.mp3");
+fightSound = loadSound("sounds/fight.mp3");
 slapSound = loadSound("sounds/slap.mp3");
 
 screamSounds = [
-  loadSound("惨叫1.mp3"),
-  loadSound("惨叫2.mp3"),
-  loadSound("尖叫鸡.mp3")
+  loadSound("sounds/惨叫1.mp3"),
+  loadSound("sounds/惨叫2.mp3"),
+  loadSound("sounds/尖叫鸡.mp3")
 ];
 
-keyboardSound = loadSound("keyboard.mp3");
-successSound = loadSound("success.mp3");
-failSound = loadSound("fail.mp3");
-  startBgImg = loadImage("background.png");
-smokeImg = loadImage("smoke.png");
+keyboardSound = loadSound("sounds/sounds/keyboard.mp3");
+successSound = loadSound("sounds/sounds/success.mp3");
+failSound = loadSound("sounds/sounds/fail.mp3");
+  startBgImg = loadImage("images/background.png");
+smokeImg = loadImage("images/smoke.png");
 
-textBg = loadImage("text background.PNG");
-startImg = loadImage("start.PNG");
-  explanationImg = loadImage("explanation.PNG");
+textBg = loadImage("images/text background.PNG");
+startImg = loadImage("images/start.PNG");
+  explanationImg = loadImage("images/explanation.PNG");
   bg = loadImage("images/background.jpg");
 
-  fistIcon = loadImage("fist.png");
-  palmIcon = loadImage("palm.png");
-  speakIcon = loadImage("speak.png");
-  leaveIcon = loadImage("leave.png");
+  fistIcon = loadImage("images/fist.png");
+  palmIcon = loadImage("images/palm.png");
+  speakIcon = loadImage("images/speak.png");
+  leaveIcon = loadImage("images/leave.png");
 
-  hpEmptyIcon = loadImage("HP1.png");
-  hpFullIcon = loadImage("HP2.png");
-closeUpBg = loadImage("close-up background.png");
+  hpEmptyIcon = loadImage("images/HP1.png");
+  hpFullIcon = loadImage("images/HP2.png");
+closeUpBg = loadImage("images/close-up background.png");
 fightSprites["2"] = [
-  loadImage("2fight-1.png"),
-  loadImage("2fight-2.png")
+  loadImage("images/2fight-1.png"),
+  loadImage("images/2fight-2.png")
 ];
 
 fightSprites["3"] = [
-  loadImage("3fight-1.png"),
-  loadImage("3fight-2.png")
+  loadImage("images/3fight-1.png"),
+  loadImage("images/3fight-2.png")
 ];
 
 fightSprites["4"] = [
-  loadImage("4fight-1.png"),
-  loadImage("4fight-2.png")
+  loadImage("images/4fight-1.png"),
+  loadImage("images/4fight-2.png")
 ];
 
 fightSprites["5"] = [
-  loadImage("5fight-1.png"),
-  loadImage("5fight-2.png")
+  loadImage("images/5fight-1.png"),
+  loadImage("images/5fight-2.png")
 ];
   
 closeUpSprites["2"] = {
-  normal: loadImage("2normal.png"),
-  hitLeft: loadImage("2hit-left.png"),
-hitRight: loadImage("2hit-right.png"),
-  angry: loadImage("2hit angry.png")
+  normal: loadImage("images/2normal.png"),
+  hitLeft: loadImage("images/2hit-left.png"),
+hitRight: loadImage("images/2hit-right.png"),
+  angry: loadImage("images/2hit angry.png")
 };
 
 closeUpSprites["3"] = {
-  normal: loadImage("3normal.png"),
-  hitLeft: loadImage("3hit-left.png"),
-  hitRight: loadImage("3hit-right.png"),
-  angry: loadImage("3hit angry.png")
+  normal: loadImage("images/3normal.png"),
+  hitLeft: loadImage("images/3hit-left.png"),
+  hitRight: loadImage("images/3hit-right.png"),
+  angry: loadImage("images/3hit angry.png")
 };
 
 closeUpSprites["4"] = {
-  normal: loadImage("4normal.png"),
-  hitLeft: loadImage("4hit-left.png"),
-  hitRight: loadImage("4hit-right.png"),
-  angry: loadImage("4hit angry.png")
+  normal: loadImage("images/4normal.png"),
+  hitLeft: loadImage("images/4hit-left.png"),
+  hitRight: loadImage("images/4hit-right.png"),
+  angry: loadImage("images/4hit angry.png")
 };
 
 closeUpSprites["5"] = {
-  normal: loadImage("5normal.png"),
-  hitLeft: loadImage("5hit-left.png"),
-  hitRight: loadImage("5hit-right.png"),
-  angry: loadImage("5hit angry.png")
+  normal: loadImage("images/5normal.png"),
+  hitLeft: loadImage("images/5hit-left.png"),
+  hitRight: loadImage("images/5hit-right.png"),
+  angry: loadImage("images/5hit angry.png")
 };
  closeUpSlapSprites["2"] = {
-  normal: loadImage("2normal.png"),
-  slapLeft: loadImage("2slap-left.png"),
-  slapRight: loadImage("2slap-right.png"),
-  angry: loadImage("2slap angry.png")
+  normal: loadImage("images/2normal.png"),
+  slapLeft: loadImage("images/2slap-left.png"),
+  slapRight: loadImage("images/2slap-right.png"),
+  angry: loadImage("images/2slap angry.png")
 };
 
 closeUpSlapSprites["3"] = {
-  normal: loadImage("3normal.png"),
-  slapLeft: loadImage("3slap-left.png"),
-  slapRight: loadImage("3slap-right.png"),
-  angry: loadImage("3slap angry.png")
+  normal: loadImage("images/3normal.png"),
+  slapLeft: loadImage("images/3slap-left.png"),
+  slapRight: loadImage("images/3slap-right.png"),
+  angry: loadImage("images/3slap angry.png")
 };
 
 closeUpSlapSprites["4"] = {
-  normal: loadImage("4normal.png"),
-  slapLeft: loadImage("4slap-left.png"),
-  slapRight: loadImage("4slap-right.png"),
-  angry: loadImage("4slap angry.png")
+  normal: loadImage("images/4normal.png"),
+  slapLeft: loadImage("images/4slap-left.png"),
+  slapRight: loadImage("images/4slap-right.png"),
+  angry: loadImage("images/4slap angry.png")
 };
 
 closeUpSlapSprites["5"] = {
-  normal: loadImage("5normal.png"),
-  slapLeft: loadImage("5slap-left.png"),
-  slapRight: loadImage("5slap-right.png"),
-  angry: loadImage("5slap angry.png")
+  normal: loadImage("images/5normal.png"),
+  slapLeft: loadImage("images/5slap-left.png"),
+  slapRight: loadImage("images/5slap-right.png"),
+  angry: loadImage("images/5slap angry.png")
 }; 
   sprites1.stand = {
-    down: loadImage("1stand-down.png"),
-    left: loadImage("1stand-left.png"),
-    right: loadImage("1stand-right.png"),
-    up: loadImage("1stand-up.png")
+    down: loadImage("images/1stand-down.png"),
+    left: loadImage("images/1stand-left.png"),
+    right: loadImage("images/1stand-right.png"),
+    up: loadImage("images/1stand-up.png")
   };
   sprites1.walk = {
     down: [
-      loadImage("1walk-down-1.png"),
-      loadImage("1walk-down-2.png"),
-      loadImage("1walk-down-3.png"),
-      loadImage("1walk-down-4.png")
+      loadImage("images/1walk-down-1.png"),
+      loadImage("images/1walk-down-2.png"),
+      loadImage("images/1walk-down-3.png"),
+      loadImage("images/1walk-down-4.png")
     ],
     left: [
-      loadImage("1walk-left-1.png"),
-      loadImage("1walk-left-2.png"),
-      loadImage("1walk-left-3.png"),
-      loadImage("1walk-left-4.png"),
-      loadImage("1walk-left-5.png"),
-      loadImage("1walk-left-6.png"),
-      loadImage("1walk-left-7.png")
+      loadImage("images/1walk-left-1.png"),
+      loadImage("images/1walk-left-2.png"),
+      loadImage("images/1walk-left-3.png"),
+      loadImage("images/1walk-left-4.png"),
+      loadImage("images/1walk-left-5.png"),
+      loadImage("images/1walk-left-6.png"),
+      loadImage("images/1walk-left-7.png")
     ],
     right: [
-      loadImage("1walk-right-1.png"),
-      loadImage("1walk-right-2.png"),
-      loadImage("1walk-right-3.png"),
-      loadImage("1walk-right-4.png"),
-      loadImage("1walk-right-5.png"),
-      loadImage("1walk-right-6.png"),
-      loadImage("1walk-right-7.png")
+      loadImage("images/1walk-right-1.png"),
+      loadImage("images/1walk-right-2.png"),
+      loadImage("images/1walk-right-3.png"),
+      loadImage("images/1walk-right-4.png"),
+      loadImage("images/1walk-right-5.png"),
+      loadImage("images/1walk-right-6.png"),
+      loadImage("images/1walk-right-7.png")
     ],
     up: [
-      loadImage("1walk-up-1.png"),
-      loadImage("1walk-up-2.png")
+      loadImage("images/1walk-up-1.png"),
+      loadImage("images/1walk-up-2.png")
     ]
   };
 
   sprites2.stand = {
-    down: loadImage("2stand-down.png"),
-    left: loadImage("2stand-left.png"),
-    right: loadImage("2stand-right.png"),
-    up: loadImage("2stand-up.png")
+    down: loadImage("images/2stand-down.png"),
+    left: loadImage("images/2stand-left.png"),
+    right: loadImage("images/2stand-right.png"),
+    up: loadImage("images/2stand-up.png")
   };
   sprites2.walk = {
     down: [
-      loadImage("2walk-down-1.png"),
-      loadImage("2walk-down-2.png")
+      loadImage("images/2walk-down-1.png"),
+      loadImage("images/2walk-down-2.png")
     ],
     left: [
-      loadImage("2walk-left-1.png"),
-      loadImage("2walk-left-2.png"),
-      loadImage("2walk-left-3.png"),
-      loadImage("2walk-left-4.png"),
-      loadImage("2walk-left-5.png"),
-      loadImage("2walk-left-6.png")
+      loadImage("images/2walk-left-1.png"),
+      loadImage("images/2walk-left-2.png"),
+      loadImage("images/2walk-left-3.png"),
+      loadImage("images/2walk-left-4.png"),
+      loadImage("images/2walk-left-5.png"),
+      loadImage("images/2walk-left-6.png")
     ],
     right: [
-      loadImage("2walk-right-1.png"),
-      loadImage("2walk-right-2.png"),
-      loadImage("2walk-right-3.png"),
-      loadImage("2walk-right-4.png"),
-      loadImage("2walk-right-5.png"),
-      loadImage("2walk-right-6.png")
+      loadImage("images/2walk-right-1.png"),
+      loadImage("images/2walk-right-2.png"),
+      loadImage("images/2walk-right-3.png"),
+      loadImage("images/2walk-right-4.png"),
+      loadImage("images/2walk-right-5.png"),
+      loadImage("images/2walk-right-6.png")
     ],
     up: [
-      loadImage("2walk-up-1.png"),
-      loadImage("2walk-up-2.png")
+      loadImage("images/2walk-up-1.png"),
+      loadImage("images/2walk-up-2.png")
     ]
   };
 
   sprites3.stand = {
-    down: loadImage("3stand-down.png"),
-    left: loadImage("3stand-left.png"),
-    right: loadImage("3stand-right.png"),
-    up: loadImage("3stand-up.png")
+    down: loadImage("images/3stand-down.png"),
+    left: loadImage("images/3stand-left.png"),
+    right: loadImage("images/3stand-right.png"),
+    up: loadImage("images/3stand-up.png")
   };
   sprites3.walk = {
     down: [
-      loadImage("3walk-down-1.png"),
-      loadImage("3walk-down-2.png")
+      loadImage("images/3walk-down-1.png"),
+      loadImage("images/3walk-down-2.png")
     ],
     left: [
-      loadImage("3walk-left-1.png"),
-      loadImage("3walk-left-2.png"),
-      loadImage("3walk-left-3.png"),
-      loadImage("3walk-left-4.png"),
-      loadImage("3walk-left-5.png"),
-      loadImage("3walk-left-6.png"),
-      loadImage("3walk-left-7.png")
+      loadImage("images/3walk-left-1.png"),
+      loadImage("images/3walk-left-2.png"),
+      loadImage("images/3walk-left-3.png"),
+      loadImage("images/3walk-left-4.png"),
+      loadImage("images/3walk-left-5.png"),
+      loadImage("images/3walk-left-6.png"),
+      loadImage("images/3walk-left-7.png")
     ],
     right: [
-      loadImage("3walk-right-1.png"),
-      loadImage("3walk-right-2.png"),
-      loadImage("3walk-right-3.png"),
-      loadImage("3walk-right-4.png"),
-      loadImage("3walk-right-5.png"),
-      loadImage("3walk-right-6.png"),
-      loadImage("3walk-right-7.png")
+      loadImage("images/3walk-right-1.png"),
+      loadImage("images/3walk-right-2.png"),
+      loadImage("images/3walk-right-3.png"),
+      loadImage("images/3walk-right-4.png"),
+      loadImage("images/3walk-right-5.png"),
+      loadImage("images/3walk-right-6.png"),
+      loadImage("images/3walk-right-7.png")
     ],
     up: [
-      loadImage("3walk-up-1.png"),
-      loadImage("3walk-up-2.png")
+      loadImage("images/3walk-up-1.png"),
+      loadImage("images/3walk-up-2.png")
     ]
   };
 
   sprites4.stand = {
-    down: loadImage("4stand-down.png"),
-    left: loadImage("4stand-left.png"),
-    right: loadImage("4stand-right.png"),
-    up: loadImage("4stand-up.png")
+    down: loadImage("images/4stand-down.png"),
+    left: loadImage("images/4stand-left.png"),
+    right: loadImage("images/4stand-right.png"),
+    up: loadImage("images/4stand-up.png")
   };
   sprites4.walk = {
     down: [
-      loadImage("4walk-down-1.png"),
-      loadImage("4walk-down-2.png"),
-      loadImage("4walk-down-3.png")
+      loadImage("images/4walk-down-1.png"),
+      loadImage("images/4walk-down-2.png"),
+      loadImage("images/4walk-down-3.png")
     ],
     left: [
-      loadImage("4walk-left-1.png"),
-      loadImage("4walk-left-2.png"),
-      loadImage("4walk-left-3.png"),
-      loadImage("4walk-left-4.png"),
-      loadImage("4walk-left-5.png"),
-      loadImage("4walk-left-6.png"),
-      loadImage("4walk-left-7.png")
+      loadImage("images/4walk-left-1.png"),
+      loadImage("images/4walk-left-2.png"),
+      loadImage("images/4walk-left-3.png"),
+      loadImage("images/4walk-left-4.png"),
+      loadImage("images/4walk-left-5.png"),
+      loadImage("images/4walk-left-6.png"),
+      loadImage("images/4walk-left-7.png")
     ],
     right: [
-      loadImage("4walk-right-1.png"),
-      loadImage("4walk-right-2.png"),
-      loadImage("4walk-right-3.png"),
-      loadImage("4walk-right-4.png"),
-      loadImage("4walk-right-5.png"),
-      loadImage("4walk-right-6.png"),
-      loadImage("4walk-right-7.png")
+      loadImage("images/4walk-right-1.png"),
+      loadImage("images/4walk-right-2.png"),
+      loadImage("images/4walk-right-3.png"),
+      loadImage("images/4walk-right-4.png"),
+      loadImage("images/4walk-right-5.png"),
+      loadImage("images/4walk-right-6.png"),
+      loadImage("images/4walk-right-7.png")
     ],
     up: [
-      loadImage("4walk-up-1.png"),
-      loadImage("4walk-up-2.png"),
-      loadImage("4walk-up-3.png")
+      loadImage("images/4walk-up-1.png"),
+      loadImage("images/4walk-up-2.png"),
+      loadImage("images/4walk-up-3.png")
     ]
   };
 
   sprites5.stand = {
-    left: loadImage("5stand-left.png"),
-    right: loadImage("5stand-right.png")
+    left: loadImage("images/5stand-left.png"),
+    right: loadImage("images/5stand-right.png")
   };
   sprites5.run = {
     left: [
-      loadImage("5run-left-1.png"),
-      loadImage("5run-left-2.png"),
-      loadImage("5run-left-3.png")
+      loadImage("images/5run-left-1.png"),
+      loadImage("images/5run-left-2.png"),
+      loadImage("images/5run-left-3.png")
     ],
     right: [
-      loadImage("5run-right-1.png"),
-      loadImage("5run-right-2.png"),
-      loadImage("5run-right-3.png")
+      loadImage("images/5run-right-1.png"),
+      loadImage("images/5run-right-2.png"),
+      loadImage("images/5run-right-3.png")
     ]
   };
 }
