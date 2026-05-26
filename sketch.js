@@ -193,7 +193,7 @@ civilFailAqPenalty: 0.2,  // 文明劝阻失败：AQ -0.2
 function preload() {
   bgMusic = loadSound("background.mp3");
 fightSound = loadSound("fight.mp3");
-slapSound = loadSound("slap.mp3");
+slapSound = loadSound("sounds/slap.mp3");
 
 screamSounds = [
   loadSound("惨叫1.mp3"),
@@ -210,7 +210,7 @@ smokeImg = loadImage("smoke.png");
 textBg = loadImage("text background.PNG");
 startImg = loadImage("start.PNG");
   explanationImg = loadImage("explanation.PNG");
-  bg = loadImage("background.jpg");
+  bg = loadImage("images/background.jpg");
 
   fistIcon = loadImage("fist.png");
   palmIcon = loadImage("palm.png");
