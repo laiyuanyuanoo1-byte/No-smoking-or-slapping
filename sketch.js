@@ -201,9 +201,9 @@ screamSounds = [
   loadSound("sounds/尖叫鸡.mp3")
 ];
 
-keyboardSound = loadSound("sounds/sounds/keyboard.mp3");
-successSound = loadSound("sounds/sounds/success.mp3");
-failSound = loadSound("sounds/sounds/fail.mp3");
+keyboardSound = loadSound("sounds/keyboard.mp3");
+successSound = loadSound("sounds/success.mp3");
+failSound = loadSound("sounds/fail.mp3");
   startBgImg = loadImage("images/background.png");
 smokeImg = loadImage("images/smoke.png");
 
